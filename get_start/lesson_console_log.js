@@ -29,3 +29,5 @@ console.log({
     'Title': 'user2',
 });
 
+/* HTML Element */
+console.log(document.body);
