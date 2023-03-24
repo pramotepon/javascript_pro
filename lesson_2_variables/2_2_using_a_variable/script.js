@@ -17,3 +17,4 @@ let number3 = number2 / number1; // 20 / 2 = 10
 
 // With String
 let myString = "Hello " + "World"; // Hello World
+
