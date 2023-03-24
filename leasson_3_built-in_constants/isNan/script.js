@@ -1,5 +1,6 @@
 /* 
     Testing for NaN using isNaN()
+    typeof NaN is a Number
 */
 console.log(isNaN(NaN)); // true
 console.log(isNaN(1)); // false => 1 is a number
@@ -25,3 +26,6 @@ console.log(isNaN([1, 2])); // true => converted to "1, 2", which can't be conve
 // convert the value to a number before testing
 let nanIsANumber = Number.isNaN("10$");
 console.log(nanIsANumber); // false
+
+console.log(NaN === NaN); // false
+console.log(NaN == NaN); // false
