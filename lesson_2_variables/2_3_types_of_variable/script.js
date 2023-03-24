@@ -27,3 +27,5 @@ console.log(notDefined);
 console.log(typeof notDefined); 
 // console.log(anonymousVariable);  // anonymousVariable is not defined
 
+let myNull = null; // null
+console.log(myNull); // null
