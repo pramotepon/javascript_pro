@@ -79,3 +79,21 @@ let personArr = [
 ];
 // Call console log table get 2 parameter 1.Object, 2.Key Object
 console.table(personArr, ["name", "personId"]);
+
+/* 
+  Counting - console.count()
+*/
+let o1 = 1, o2 = '2', o3 = "";
+console.count(o1); // 1: 1
+console.count(o2); // 2: 1
+console.count(o3); // 1
+console.count(1); // 1: 2
+console.count('2'); // 2: 2
+console.count(''); // 1
+
+console.count(42.3); // 42.3: 1
+console.count(Number('42.3')); // 42.3: 2
+console.count('42.3'); // 42.3: 3
+
+// Clearing the console - console.clear()
+// console.clear(); // Console was cleared
