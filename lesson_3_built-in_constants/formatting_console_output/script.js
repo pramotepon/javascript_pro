@@ -11,7 +11,7 @@
 // %s = Sam , %d = 100
 console.log("%s has %d points", "Sam", 100); // Sam has 100 points
 
-// Open in browser Hello world! show 
+// Open in browser Hello world! show
 console.log("%cHello world!", "color: blue; font-size: xx-large"); // Hello world!
 
 // Main Group Collapsed menu Have text Menu List
@@ -30,7 +30,7 @@ console.log("test 1.2"); // test 1.2
 console.log("test 1.3"); // test 1.3
 console.log("test 1.4"); // test 1.4
 // End Sub group 1 have text Group 1.1
-console.groupEnd(); 
+console.groupEnd();
 // Content log in group 1
 console.groupEnd();
 // Sub main Group menu have text Group 2
@@ -41,3 +41,41 @@ console.log("test 2.3"); // test 2.3
 console.log("test 2.4"); // test 2.4
 // End Sub main Group menu have text Group 2
 console.groupEnd();
+console.groupEnd();
+
+/* 
+ Tabulating values - console.table()
+*/
+// log table Array
+console.table(["Hello", "world"]);
+// log table Object
+console.table({ foo: "bar", bar: "baz" });
+// Variable personArr type Object
+let personArr = [
+  {
+    personId: 123,
+    name: "Jhon",
+    city: "Melbourne",
+    phoneNo: "1234567890",
+  },
+  {
+    personId: 124,
+    name: "Amelia",
+    city: "Sydney",
+    phoneNo: "1234567890",
+  },
+  {
+    personId: 125,
+    name: "Emily",
+    city: "Perth",
+    phoneNo: "1234567890",
+  },
+  {
+    personId: 126,
+    name: "Abraham",
+    city: "Perth",
+    phoneNo: "1234567890",
+  },
+];
+// Call console log table get 2 parameter 1.Object, 2.Key Object
+console.table(personArr, ["name", "personId"]);
