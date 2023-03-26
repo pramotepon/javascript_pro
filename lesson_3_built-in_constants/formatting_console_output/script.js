@@ -1,0 +1,43 @@
+/*
+    Formatting console output
+        %s Formats the value as a string
+        %i or %d Formats the value as an integer
+        %f Formats the value as a floating point value
+        %o Formats the value as an expandable DOM element
+        %O Formats the value as an expandable JavaScript object
+        %c Applies CSS style rules to the output string as specified by the second parameter
+*/
+// Log data 1st params into %s and 2nd params into %d
+// %s = Sam , %d = 100
+console.log("%s has %d points", "Sam", 100); // Sam has 100 points
+
+// Open in browser Hello world! show 
+console.log("%cHello world!", "color: blue; font-size: xx-large"); // Hello world!
+
+// Main Group Collapsed menu Have text Menu List
+console.groupCollapsed("Menu List"); // Menu List
+// Sub main Group menu have text Group 1
+console.group("Group 1"); // Group 1
+// Content log in group 1
+console.log("test 1"); // test 1
+console.log("test 2"); // test 2
+console.log("test 3"); // test 3
+console.log("test 4"); // test 4
+// Sub group 1 have text Group 1.1
+console.group("Group 1.1"); // Group 1.1
+console.log("test 1.1"); // test 1.1
+console.log("test 1.2"); // test 1.2
+console.log("test 1.3"); // test 1.3
+console.log("test 1.4"); // test 1.4
+// End Sub group 1 have text Group 1.1
+console.groupEnd(); 
+// Content log in group 1
+console.groupEnd();
+// Sub main Group menu have text Group 2
+console.group("Group 2"); // Group 2
+console.log("test 2.1"); // test 2.1
+console.log("test 2.2"); // test 2.2
+console.log("test 2.3"); // test 2.3
+console.log("test 2.4"); // test 2.4
+// End Sub main Group menu have text Group 2
+console.groupEnd();
